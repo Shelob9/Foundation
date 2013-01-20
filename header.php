@@ -42,8 +42,11 @@
 		</hgroup>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-bar', 'fallback_cb' => 'foundation_page_menu', 'container' => 'nav', 'container_class' => 'twelve columns', 'walker' => new foundation_navigation() ) ); ?>
-
+		<div class="row">
+			<div class="ten columns offset-by-two">
+				<?php the_breadcrumb() ?>
+			</div>
+		</div>
 	</header>
 
 <!-- Begin Page -->
-<div class="row">

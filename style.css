@@ -1,77 +1,84 @@
 /*
-Theme Name: Foundation, for WordPress
-Theme URI: http://fwp.drewsymo.com
-Author: Drew Morris
-Author URI: http://drewsymo.com
-Version: 3.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: foundation
+ * Theme Name: Welcome Page Theme
+ * Template: Foundation-P_Cb
+ * Theme URI: 
+ * Author: Josh Pollock
+ * Author URI: http://Complexwaveform.com/calvinball
+ * Description: Child theme for 
+ * Tags:  
+
 */
 
-/* Artfully masterminded by ZURB  */
+@import url("../Foundation-P_Cb/style.css");
+ */
+ 
+ /* HEADER */
+#header {height: 40px;}
 
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Images
-:: Posts
-:: Typography
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
+#header-left {
 
-/* -----------------------------------------
-   Images
------------------------------------------ */
-
-.widget img {
-    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
 }
-img[class*="align"],
-img[class*="wp-image-"] {
-    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
-}
-img.size-full {
-    max-width: 97.5%;
-    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+#header-right {
+
 }
 
-.wp-caption { max-width: 100%; }
+#parent {position: relative;}
 
-/* -----------------------------------------
-   Posts
------------------------------------------ */
+#child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
 
-.author-box h5 {margin-top:0px;}
-.author-box .author_gravatar {margin-right:10px;}
-.author-box p {font-size:14px; font-size:1.4rem;}
+ /* FLOATS */
+ 
+ .float-left {float:left; margin-right:4px;}
+ .float-right {float:right; margin-left:4px;}
 
-article .th {margin-bottom:10px; margin-bottom:1rem;}
+/* PAGE ONE */
 
-.alignleft {float:left;}
-.alignright {float:right;}
+.one-wrap {
+-moz-box-shadow:inset -4px 0px 8px #FFB273;
+-webkit-box-shadow:inset -4px 0px 8px #FFB273;
+box-shadow:inset -4px 0px 8px #FFB273;
+padding-bottom:2px;
+}
+.row-label{
+background-color: #BF7130;
+-moz-border-radius-topleft: 04px;
+-moz-border-radius-topright:18px;
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:0px;
+-webkit-border-top-left-radius:0px;
+-webkit-border-top-right-radius:18px;
+-webkit-border-bottom-left-radius:0px;
+-webkit-border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+border-top-right-radius:18px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+-moz-box-shadow:inset -4px 0px 8px #FFB273;
+-webkit-box-shadow:inset -4px 0px 8px #FFB273;
+box-shadow:inset -4px 0px 8px #FFB273;
+padding-bottom:2px;
 
-/* -----------------------------------------
-   Typography
------------------------------------------ */
+}
+.bottom-row-label{
+background-color: #BF7130;
+-moz-box-shadow:inset -4px 0px 8px #FFB273;
+-webkit-box-shadow:inset -4px 0px 8px #FFB273;
+box-shadow:inset -4px 0px 8px #FFB273;
+padding-top:2px;
 
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-weight:300;}
+}
 
-.site-title .subheader {margin-bottom:0;}
-
-/* -----------------------------------------
-   Shared Styles
------------------------------------------ */
-
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
+/* PAGE TWO */
 
 
+
+/*   */
