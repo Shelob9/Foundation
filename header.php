@@ -29,21 +29,53 @@
 <title><?php wp_title(); ?></title>
 
 <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '483624845029423', // App ID from the App Dashboard
+      channelUrl : '//WWW.naturescholar.COM/channel.html', // Channel File for x-domain communication
+      status     : true, // check the login status upon init?
+      cookie     : true, // set sessions cookies to allow your server to access the session?
+      xfbml      : true  // parse XFBML tags on this page?
+    });
 
-	<header class="row">
+    // Additional initialization code such as adding Event Listeners goes here
 
-		<hgroup class="site-title twelve columns">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h3 class="subheader"><?php bloginfo('description'); ?></h3>
-		</hgroup>
+  };
 
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-bar', 'fallback_cb' => 'foundation_page_menu', 'container' => 'nav', 'container_class' => 'twelve columns', 'walker' => new foundation_navigation() ) ); ?>
-
+  // Load the SDK's source Asynchronously
+  // Note that the debug version is being actively developed and might 
+  // contain some type checks that are overly strict. 
+  // Please report such bugs using the bugs tool.
+  (function(d, debug){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document, /*debug*/ false));
+</script>
+	<header class="row" style="background-color:#fff;">
+		
+		<div class="twelve columns" style="margin-top: 4px;">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<img src="<?php bloginfo('template_directory'); ?>/lib/img/header-bg.png" alt="Nature Scholar Logo" width="960" height="78">
+			</a>
+		</div>
+		
+		
 	</header>
 
+
+		
+
+	
+
 <!-- Begin Page -->
-<div class="row">
+
+<div class="row radius" style="background-color:#fff;">

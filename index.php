@@ -12,12 +12,23 @@
 get_header(); ?>
 
     <!-- Main Content -->
-    <div class="nine columns" role="content">
 
-		<?php if ( have_posts() ) : ?>
+ <?php if ( have_posts() ) : ?>
+ 
+<?php include ('lib/open-main.php'); ?>
+	
 
+
+ 			 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+			
+			<div itemscope itemtype="http://schema.org/Book">
+			<article style="margin-left:5px;">
+				<?php get_template_part( 'books', 'header' ); ?>
+				<?php get_template_part( 'excerpt', 'footer' ); ?>
+			</article>
+			</div><!--/schema-->
+			<hr>
 			<?php endwhile; ?>
 
 		<?php else : ?>
@@ -28,8 +39,10 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<?php foundation_pagination(); ?>
-
-    </div>
+ 
+</div>
+</div>
+    
     <!-- End Main Content -->
 
 <?php get_sidebar(); ?>

@@ -1,8 +1,8 @@
 /*
-Theme Name: Foundation, for WordPress
-Theme URI: http://fwp.drewsymo.com
-Author: Drew Morris
-Author URI: http://drewsymo.com
+Theme Name: Foundation-Gus
+Theme URI: 
+Author: Josh Pollock
+Author URI: http://complexwaveform.com
 Version: 3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -71,7 +71,31 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 ----------------------------------------- */
 
 /* -----------------------------------------
-   Page Name 2
+   Josh's added styles
 ----------------------------------------- */
 
+body {
+background-color:#F2ECF1;
+}
+#embosser {
+color: #222;
+text-shadow: 0px 2px 3px #555;
 
+}
+/*For hiding the fb likes count */
+/* make the like button smaller */
+/* http://stackoverflow.com/a/6326964/1469799 */
+.facebook {
+position: relative;
+width: 46px;
+height: 21px;
+}
+
+.facebook_hide_count {
+width: 100px;
+height: 21px;
+background: white;
+position: absolute;
+left: 46px;
+top: 0;
+}

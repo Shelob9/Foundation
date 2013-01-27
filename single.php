@@ -12,7 +12,7 @@
 get_header(); ?>
 
     <!-- Main Content -->
-    <div class="nine columns" role="content">
+   <?php include ('lib/open-main.php'); ?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,6 +22,7 @@ get_header(); ?>
 			
 		<?php endif; ?>
 
+    </div>
     </div>
     <!-- End Main Content -->
 
