@@ -23,7 +23,7 @@ add_filter( 'pre_get_posts', 'wpse28145_add_custom_types' );
 
 //METABOXs. Require meta box plugin
 //http://www.deluxeblogtips.com/meta-box/register-single-meta-box/
-
+if( class_exists( 'RW_Meta_Box' ) ) {
 add_action( 'admin_init', 'rw_register_meta_boxes' );
 function rw_register_meta_boxes()
 {
@@ -68,7 +68,7 @@ function rw_register_meta_boxes()
     }
 }
 
-
+} /*END IF EXISTS */
 //quote shortcode
 function quote( $atts, $content = null ) {  
     return '<blockquote><p>'.$content.'</p></blockquote>';  
