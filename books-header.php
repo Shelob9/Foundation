@@ -11,7 +11,7 @@
 				
 				<div class="row">
 					<div class="twelve columns">
-					<a class="success button radius" href="http://www.amazon.com/exec/obidos/ASIN/<?php  $meta = get_post_meta( get_the_ID(), 'rw_pamz', true ); echo $meta; ?>/<?php amazon_track(); ?>/">Buy Book</a>
+					<a class="success button radius" href="http://www.amazon.com/exec/obidos/ASIN/<?php  $meta = get_post_meta( get_the_ID(), 'rw_pamz', true ); echo $meta; ?>/<?php amazon_track(); ?>/" target="_blank">Buy Book</a>
 						
 					</div>
 				</div>
