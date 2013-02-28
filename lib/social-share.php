@@ -6,6 +6,6 @@
 			</div>
 	
 			<div class="nine columns offset-by-one">
-				<?php lacands_wp_filter_content_widget(); ?>
+				
 			</div>
 </div>

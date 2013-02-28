@@ -13,7 +13,7 @@
 <!-- Sidebar -->
 <aside class="three columns pull-nine">
 
-<div class="row panel  radius centered" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
+<div class="row panel radius centered" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
 
 
 	<div class="row" id="sidebar-social">
@@ -33,7 +33,10 @@
 	</div>
 	
 	<div class="row" id="fblike-sidebar">
-		<div class="fb-like twelve columns centered" data-href="http://NatureScholar.com" data-send="false" data-width="200" data-show-faces="true" data-font="arial"></div>
+		<div class="twelve columns centered">
+			<div class="fb-like" layout="standard "data-href="http://NatureScholar.com" data-send="false" data-width="225" data-show-faces="false" data-font="arial"></div>
+		</div>
+		<div class="facebook_hide_count"></div>
 	</div>
 	
 	<div class="row" id="adsense" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
