@@ -162,8 +162,8 @@ function amazon_link_function($atts, $content = null) {
       "isbn" => 'isbn',
       "title" => 'title',
    ), $atts));
- 
+//[[ 
    return '<a href="http://www.amazon.com/exec/obidos/ASIN/'.$isbn.'/'.amazon_track().'/" title="'.$title.'" target="_blank">'.$title.'</a>';
   
 }
-add_shortcode("amazon-link", "amazon_link_function");
+add_shortcode("amazon", "amazon_link_function");
