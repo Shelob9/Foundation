@@ -160,7 +160,7 @@ function yoast_add_google_profile( $contactmethods ) {
 function contributors() {
 global $wpdb;
 
-$authors = $wpdb->get_results("SELECT ID, user_nicename from $wpdb->users WHERE display_name <> 'admin' ORDER BY display_name");
+$authors = $wpdb->get_results("SELECT ID, user_nicename from $wpdb->users WHERE id IN ('3','5','4') ORDER BY display_name");
 
 foreach ($authors as $author ) {
 
