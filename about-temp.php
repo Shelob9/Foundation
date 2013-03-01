@@ -36,7 +36,7 @@ get_header(); ?>
 <?php endif; ?>
 		
 <h2>Contributors</h2>
-	<ul class="block-grid four-up mobile"><?php contributors(); ?></ul>
+	<ul class="block-grid two-up"><?php contributors(); ?></ul>
 </article>
 		
 
