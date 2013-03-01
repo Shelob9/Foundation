@@ -173,27 +173,31 @@ echo "<li>";
 		echo "</a>";
 	echo "</div>";
 	echo '<div class="nine columns">';
-		echo "<a href=\"".get_bloginfo('url')."/author/";
-		the_author_meta('user_nicename', $author->ID);
-		echo "/\">";
-		the_author_meta('display_name', $author->ID);
-		echo "</a>";
-		echo "<br />";
-		echo "Website: <a href=\"";
-		the_author_meta('user_url', $author->ID);
-		echo "/\" target='_blank'>";
-		the_author_meta('user_url', $author->ID);
-		echo "</a>";
-		echo "<br />";
+		echo '<div class="row">';
+			echo "<a href=\"".get_bloginfo('url')."/author/";
+			the_author_meta('user_nicename', $author->ID);
+			echo "/\">";
+			the_author_meta('display_name', $author->ID);
+			echo "</a>";
+			echo "<br />";
+			echo "Website: <a href=\"";
+			the_author_meta('user_url', $author->ID);
+			echo "/\" target='_blank'>";
+			the_author_meta('user_url', $author->ID);
+			echo "</a>";
+			echo "<br />";
+		echo '</div>';
+		echo '<div class="row">';
 		
-		
-		
-		//echo "<a href=\"".get_bloginfo('url')."/author/";
-		//the_author_meta('user_nicename', $author->ID);
-		//echo "/\">Visit&nbsp;";
-		//the_author_meta('display_name', $author->ID);
-		//echo "'s Profile Page";
-		//echo "</a>";
+		echo '</div>';
+		echo 'div class="row">':
+			//echo "<a href=\"".get_bloginfo('url')."/author/";
+			//the_author_meta('user_nicename', $author->ID);
+			//echo "/\">Visit&nbsp;";
+			//the_author_meta('display_name', $author->ID);
+			//echo "'s Profile Page";
+			//echo "</a>";
+		echo '</div>';
 	echo "</div>";
 echo "</li>";
 }
