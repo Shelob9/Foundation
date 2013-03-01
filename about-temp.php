@@ -22,8 +22,7 @@ get_header(); ?>
 <div class="row">
 	<div class="twelve columns">
 		<h2>About Nature Scholar</h2>
-		<p>Nature Scholar is a jumping off point for students of environmental studies, environmental science, and life science who are seeking to find their way through interdisciplinary research.</p>
-		<?php wp_list_authors(); ?> 
+		<div id="authorlist"><ul><?php contributors(); ?></ul></div>
 	</div>
 </div>		
 

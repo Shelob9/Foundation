@@ -155,5 +155,28 @@ function yoast_add_google_profile( $contactmethods ) {
 	}
 	add_filter( 'user_contactmethods', 'yoast_add_tumblr_profile', 10, 1);
 	
+//Authors list
+//http://www.wpbeginner.com/wp-tutorials/how-to-display-an-author-list-with-avatars-in-wordpress-contributors-page/
+function contributors() {
+global $wpdb;
 
+$authors = $wpdb->get_results("SELECT ID, user_nicename from $wpdb->users ORDER BY display_name");
+
+foreach($authors as $author) {
+echo "<li>";
+echo "<a href=\"".get_bloginfo('url')."/?author=";
+echo $author->ID;
+echo "\">";
+echo get_avatar($author->ID);
+echo "</a>";
+echo '<div>';
+echo "<a href=\"".get_bloginfo('url')."/?author=";
+echo $author->ID;
+echo "\">";
+the_author_meta('display_name', $author->ID);
+echo "</a>";
+echo "</div>";
+echo "</li>";
+}
+}
 ?>

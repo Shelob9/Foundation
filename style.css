@@ -63,9 +63,24 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .site-title .subheader {margin-bottom:0;}
 
 /* -----------------------------------------
-   Shared Styles
+   Author's List
 ----------------------------------------- */
+#authorlist li {
+clear: left;
+float: left;
+margin: 0 0 5px 0;
+}
 
+#authorlist img.photo {
+width: 40px;
+height: 40px;
+float: left;
+}
+
+#authorlist div.authname {
+margin: 20px 0 0 10px;
+float: left;
+}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
@@ -99,3 +114,5 @@ position: absolute;
 left: 46px;
 top: 0;
 }
+
+
