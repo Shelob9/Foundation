@@ -35,17 +35,18 @@
 <body <?php body_class(); ?>>
 
 <div class="row" id="wrap">
+	<div class="nine columns" id="main">
+		
+		<header class="twelve columns">
 
-	<header class="row">
+			<hgroup class="site-title three columns">
+				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h3 class="subheader"><?php bloginfo('description'); ?></h3>
+			</hgroup>
+			
+			<div class="nine colums" role="nav">
+			nav
+			</div>
+		</header>
 
-		<hgroup class="site-title twelve columns">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h3 class="subheader"><?php bloginfo('description'); ?></h3>
-		</hgroup>
 
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav-bar', 'fallback_cb' => 'foundation_page_menu', 'container' => 'nav', 'container_class' => 'twelve columns', 'walker' => new foundation_navigation() ) ); ?>
-
-	</header>
-
-<!-- Begin Page -->
-<div class="row">
