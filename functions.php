@@ -7,7 +7,9 @@ include ('lib/years-tax.php');
 
 /* include adsense/amazon things */
 include ('lib/adsenser.php');
-include ('lib/amzsenser.php');
+//include ('lib/amzsenser.php');
+include ('lib/amazon.php');
+
 
 /* include Josh's custom functions file */
 include ('lib/jp-functions.php');
