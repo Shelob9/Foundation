@@ -188,19 +188,19 @@ echo "<li>";
 			echo "<br />";
 		echo '</div>';
 		echo '<div class="row">';
-			$google_profile = get_the_author_meta( 'google_profile' );
+			$google_profile = get_the_author_meta( 'google_profile', $author->ID );
 			if ( $google_profile ) {
 			echo '<a class="fc-webicon googleplus small" href="' . esc_url($google_profile) . '" rel="me"></a>';
 			}
 			
-			$username = get_the_author_meta('tumblr');
+			$username = get_the_author_meta('tumblr', $author->ID);
 			if ( $username != null ) {
 			$a1 = "<a class=\"fc-webicon tumblr small\" href=\"http://";
 			$a2 = ".tumblr.com\" ></a>";
 			echo $a1.$username.$a2;
 			}
 			
-			$username = get_the_author_meta('twitter');
+			$username = get_the_author_meta('twitter', $author->ID);
 			$a1 = "<a class=\"fc-webicon twitter small\" href=\"http://twitter.com/";
 			$a2 = "\"></a>";
 			if ( $username != null ) {

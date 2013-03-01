@@ -34,9 +34,12 @@ get_header(); ?>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
-		
-<h2>Contributors</h2>
-	<ul class="block-grid two-up"><?php contributors(); ?></ul>
+	<div class="row">	
+		<h2>Contributors</h2>
+	</div>
+	<div class="row">
+		<ul class="block-grid two-up"><?php contributors(); ?></ul>
+	</div>
 </article>
 		
 
