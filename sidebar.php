@@ -49,12 +49,8 @@
 
 	<div class="row" id="leftbar" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
 		<div class="twelve columns centered">
-			<?php if ( dynamic_sidebar('Sidebar Right') ) : elseif( current_user_can( 'edit_theme_options' ) ) : ?>
-
-			<h5><?php _e( 'No widgets found.', 'foundaton' ); ?></h5>
-			<p><?php printf( __( 'It seems you don\'t have any widgets in your sidebar! Would you like to %s now?', 'foundation' ), '<a href=" '. get_admin_url( '', 'widgets.php' ) .' ">populate your sidebar</a>' ); ?></p>
-
-			<?php endif; ?>
+			//<?php adsense_ad() ?>
+			
 		</div>
 	</div>
 	
