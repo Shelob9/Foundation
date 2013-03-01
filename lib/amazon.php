@@ -39,9 +39,10 @@ function amazon_link_function($atts, $content = null) {
       'isbn' => ' ',
       'title' => ' '
    ), $atts));
+   
+$amztrack = get_the_author_meta( 'amz', FALSE );
 
-   return '<a href="http://www.amazon.com/exec/obidos/ASIN/' .$isbn. '/' .the_author_meta( 'amz' ). '" title="' .$title. '" target="_blank">' .$title. '</a>';
-  
+  return '<a href="http://www.amazon.com/exec/obidos/ASIN/' .$isbn. '/' .$amztrack. '" title="' .$title. '" target="_blank">' .$title. '</a>';
 }
 add_shortcode("amazon", "amazon_link_function");
 
