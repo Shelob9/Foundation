@@ -20,10 +20,10 @@ function add_amazon_track_code( $user ) { ?>
 
 	</table>
 <?php } 
-add_action( 'personal_options_update', 'my_save_extra_profile_fields' );
-add_action( 'edit_user_profile_update', 'my_save_extra_profile_fields' );
+add_action( 'personal_options_update', 'save_amazon_track_code' );
+add_action( 'edit_user_profile_update', 'save_amazon_track_code' );
 
-function my_save_extra_profile_fields( $user_id ) {
+function save_amazon_track_code( $user_id ) {
 
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return false;
