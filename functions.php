@@ -65,7 +65,8 @@ function foundation_assets() {
 		// Load Stylesheets
 		wp_enqueue_style( 'foundation', get_template_directory_uri().'/stylesheets/foundation.min.css' );
 		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
-
+		wp_enqueue_style( 'fc-webicons', get_template_directory_uri().'/lib/fc-webicons.css' );
+		
 		// Load Google Fonts API
 		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300' );
 	

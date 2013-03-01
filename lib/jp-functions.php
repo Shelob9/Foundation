@@ -1,5 +1,5 @@
 <?php
-wp_enqueue_style( 'fc-webicons', get_template_directory_uri().'/lib/fc-webicons.css' );
+
 
 /* require( get_template_directory() . '/lib/slider/slider.php' ); */
 
@@ -162,7 +162,7 @@ function amazon_link_function($atts, $content = null) {
       "isbn" => 'isbn',
       "title" => 'title',
    ), $atts));
-//[[ 
+
    return '<a href="http://www.amazon.com/exec/obidos/ASIN/'.$isbn.'/'.amazon_track().'/" title="'.$title.'" target="_blank">'.$title.'</a>';
   
 }
