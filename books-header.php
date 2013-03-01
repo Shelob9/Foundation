@@ -11,12 +11,8 @@
 				
 				<div class="row">
 					<div class="twelve columns">
-					<?php 
-					  $user_id = get_the_ID();
-					  $key = 'amz';
-					  $amztrack = $key
-					?>
-					<a class="success button radius" href="http://www.amazon.com/exec/obidos/ASIN/<?php  $meta = get_post_meta( get_the_ID(), 'rw_pamz', true ); echo $meta; ?>/<?php echo $amztack;  ?>/" target="_blank">Buy Book</a>
+					
+					<a class="success button radius" href="http://www.amazon.com/exec/obidos/ASIN/<?php  $meta = get_post_meta( get_the_ID(), 'rw_pamz', true ); echo $meta; ?>/<?php the_author_meta( 'amz' ); ?>/" target="_blank">Buy Book</a>
 						
 					</div>
 				</div>
