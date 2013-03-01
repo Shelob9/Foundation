@@ -188,12 +188,12 @@ echo "<li>";
 		
 		
 		
-		echo "<a href=\"".get_bloginfo('url')."/author/";
-		the_author_meta('user_nicename', $author->ID);
-		echo "/\">Visit&nbsp;";
-		the_author_meta('display_name', $author->ID);
-		echo "'s Profile Page";
-		echo "</a>";
+		//echo "<a href=\"".get_bloginfo('url')."/author/";
+		//the_author_meta('user_nicename', $author->ID);
+		//echo "/\">Visit&nbsp;";
+		//the_author_meta('display_name', $author->ID);
+		//echo "'s Profile Page";
+		//echo "</a>";
 	echo "</div>";
 echo "</li>";
 }
