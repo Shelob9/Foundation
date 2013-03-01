@@ -36,7 +36,7 @@
 		<div class="twelve columns centered">
 			<div class="fb-like" layout="standard "data-href="http://NatureScholar.com" data-send="false" data-width="225" data-show-faces="false" data-font="arial"></div>
 		</div>
-		<div class="facebook_hide_count"></div>
+		
 	</div>
 	
 	<div class="row" id="adsense" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
