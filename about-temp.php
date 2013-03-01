@@ -19,12 +19,26 @@ get_header(); ?>
 
     <!-- Main Content -->
 <?php include ('lib/open-main.php'); ?>
-<div class="row">
-	<div class="twelve columns">
-		<h2>About Nature Scholar</h2>
-		<div id="authorlist"><ul><?php contributors(); ?></ul></div>
+<?php if ( have_posts() ) : ?>
+<?php while ( have_posts() ) : the_post(); ?>
+<article>
+	<header>
+		<hgroup class="row">
+			 <h2>About Nature Scholar</h2>
+		</hgroup>
+	</header>
+	<div class="row">
+		<div class="twelve columns">
+			<?php the_content(); ?>
+		</div>
 	</div>
-</div>		
+<?php endwhile; ?>
+<?php endif; ?>
+		
+<h2>Contributors</h2>
+	<ul class="block-grid four-up mobile"><?php contributors(); ?></ul>
+</article>
+		
 
 
 
