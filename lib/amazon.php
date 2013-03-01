@@ -5,7 +5,7 @@ add_action( 'edit_user_profile', 'add_amazon_track_code' );
 
 function add_amazon_track_code( $user ) { ?>
 
-	<h3>Extra profile information</h3>
+	<h3>Amazon Tracking Code</h3>
 
 	<table class="form-table">
 
@@ -36,11 +36,11 @@ function save_amazon_track_code( $user_id ) {
  
 function amazon_link_function($atts, $content = null) {
    extract(shortcode_atts(array(
-      "isbn" => 'isbn',
-      "title" => 'title',
+      'isbn' => ' ',
+      'title' => ' '
    ), $atts));
 
-   return '<a href="http://www.amazon.com/exec/obidos/ASIN/'.esc_attr($isbn).'/'.the_author_meta( 'amz' ).'/" title="'.esc_attr($title).'" target="_blank">'.esc_attr($title).'</a>';
+   return '<a href="http://www.amazon.com/exec/obidos/ASIN/' .$isbn. '/" title="' .$title. '" target="_blank">' .$title. '</a>';
   
 }
 add_shortcode("amazon", "amazon_link_function");
