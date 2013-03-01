@@ -34,6 +34,12 @@ get_header(); ?>
 	</div>
 <?php endwhile; ?>
 <?php endif; ?>
+	<div class="row">
+		<div class="ten columns centered callout panel radius">
+			<h5>Would you like to contribute?</h5>
+			<p>We are seeking new contributors, if you're interested <a href="mailto:NatureScholarSite@gmail.com">send us an email</a> with a little about yourself, your educational and writing experience and what you'd like to contribute.</p>
+		</div>
+	</div>
 	<div class="row">	
 		<h2>Contributors</h2>
 	</div>
