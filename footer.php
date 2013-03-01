@@ -30,5 +30,6 @@
 <!-- End Footer -->
 
 <?php wp_footer(); ?>
+</div><!-- id="wrap"-->
 </body>
 </html>
