@@ -32,19 +32,5 @@ function save_amazon_track_code( $user_id ) {
 	update_user_meta( $user_id, 'amz', $_POST['amz'] );
 }
 
-//to use: the_author_meta( amz, $user_id );
-
-//shortcode for amazon affliate link
- 
-function amazon_link_function($atts, $content = null) {
-   extract(shortcode_atts(array(
-      "isbn" => 'isbn',
-      "title" => 'title',
-   ), $atts));
-
-   return '<a href="http://www.amazon.com/exec/obidos/ASIN/'.$isbn.'/'.amz.'/" title="'.$title.'" target="_blank">'.$title.'</a>';
-  
-}
-add_shortcode("amazon", "amazon_link_function");
 
 ?>
