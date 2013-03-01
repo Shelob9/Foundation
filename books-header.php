@@ -61,9 +61,9 @@
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div>
 						<div class="six columns offset-by-three">
-							<div class="fb-like" style="overflow:hidden; width: 45px !important;" data-href="http://www.facebook.com/naturescholar" href="<?php echo get_permalink($post->ID); ?>" data-send="false" data-layout="button-count" data-width="450" data-show-faces="false" data-font="arial">
+							<div class="fb-like" style="overflow:hidden; width:51px !important;" data-href="http://www.facebook.com/naturescholar" href="<?php echo get_permalink($post->ID); ?>" data-send="false" data-layout="button-count" data-width="450" data-show-faces="false" data-font="arial">
 							</div>
-							<div class="facebook_hide_count"></div>
+						
 
 						</div>
 						

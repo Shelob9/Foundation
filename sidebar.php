@@ -27,14 +27,15 @@
 	
 	<div class="row" id="twitters-sidebar">
 		<div class="twelve columns centered">
-			<a href="https://twitter.com/NatureScholar" class="twitter-follow-button" data-show-count="false">Follow @TWITTERNAME</a>
+			<a href="https://twitter.com/NatureScholar" class="twitter-follow-button" data-show-count="false">Follow @NatureScholar</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
 	
 	<div class="row" id="fblike-sidebar">
 		<div class="twelve columns centered">
-			<div class="fb-like" layout="standard "data-href="http://NatureScholar.com" data-send="false" data-width="225" data-show-faces="false" data-font="arial"></div>
+			<div class="fb-like" style="overflow:hidden; width:51px !important;" data-href="http://www.facebook.com/naturescholar" href="<?php echo get_permalink($post->ID); ?>" data-send="false" data-layout="button-count" data-width="450" data-show-faces="false" data-font="arial">
+			</div>
 		</div>
 		
 	</div>
