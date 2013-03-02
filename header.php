@@ -54,7 +54,7 @@
 			
 		<!-- Main Content -->
 		<div class="row">
-			<div class="nine columns" role="content">
+			<div class="twelve columns" role="content">
 
 				<?php if ( have_posts() ) : ?>
 
