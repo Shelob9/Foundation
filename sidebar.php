@@ -11,7 +11,7 @@
 ?>
 
 <!-- Sidebar -->
-<aside class="three columns">
+<aside class="three columns panel callout radius">
 
 <?php if ( dynamic_sidebar('Sidebar Right') ) : elseif( current_user_can( 'edit_theme_options' ) ) : ?>
 
