@@ -80,40 +80,47 @@
 	<!-- Footer -->
 		<footer class="row">
 			<div class="twelve columns panel radius" id="footer-bg">
-				
+				<div class="row">
 			
-				<div class="four columns panel callout radius">
-					<a href="https://github.com/Shelob9/Foundation/tree/thesis13" class="fc-webicon git"></a>
-					<br />
-					<p>Fork!</p>
-				</div>
+					<div class="four columns panel callout radius">
+						<a href="https://github.com/Shelob9/Foundation/tree/thesis13" class="fc-webicon git"></a>
+						<br />
+						<p>Fork!</p>
+					</div>
 				
-				<div class="four columns panel callout radius">
-					<h6>Description of site</h6>
-					<h7>Copyright 2013 Josh Pollock. Some rights reserved.</h7>
-					<P>Content licensed under ? Creative Commons License. Site powered by WordPress. WordPress and this theme licensed under GPLv?. Theme based on Foundation Framework, which is licensed under the MIT License, and is based on a starter theme by Drewmoyo.</p>
-				</div>
+					<div class="four columns panel callout radius">
+						<h6>Description of site</h6>
+						<h7>Copyright 2013 Josh Pollock. Some rights reserved.</h7>
+					</div>
 			
-				<div class="four columns panel callout radius">
-					<div class="row">
-						<div class="four columns">
-							<a href="#" class="fc-webicon #"></a>
-						</div>
+					<div class="four columns panel callout radius">
+						<div class="row">
+							<div class="four columns">
+								<a href="#" class="fc-webicon #"></a>
+							</div>
 						
-						<div class="four columns">
-							<a href="#" class="fc-webicon facebook"></a>
+							<div class="four columns">
+								<a href="#" class="fc-webicon facebook"></a>
+							</div>
+							<div class="four columns">
+								<a href="#" class="fc-webicon googleplus"></a>
+							</div>
+							<div class="four columns">
+								<a href="#" class="fc-webicon email"></a>
+							</div>
 						</div>
-						<div class="four columns">
-							<a href="#" class="fc-webicon googleplus"></a>
-						</div>
-						<div class="four columns">
-							<a href="#" class="fc-webicon email"></a>
+						<div class="row">
+							<div class="four columns centered">
+								<p>Connect!</p>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="four columns centered">
-							<p>Connect!</p>
-						</div>
+				</div>
+				
+				<div class="row">
+					<div class="eight columns centered panel callout radius">
+						<P>Content licensed under ? Creative Commons License. Site powered by WordPress. WordPress and this theme licensed under GPLv?. Theme based on Foundation Framework, which is licensed under the MIT License, and is based on a starter theme by Drewmoyo.
+						</p>
 					</div>
 				</div>
 			</div>
