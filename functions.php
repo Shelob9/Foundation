@@ -54,6 +54,7 @@ function foundation_assets() {
 
 		// Load Stylesheets
 		wp_enqueue_style( 'foundation', get_template_directory_uri().'/stylesheets/foundation.min.css' );
+		wp_enqueue_style( 'foundation', get_template_directory_uri().'/stylesheets/fc-webicons.css' );
 		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
 
 		// Load Google Fonts API
