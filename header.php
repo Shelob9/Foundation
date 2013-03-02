@@ -35,18 +35,69 @@
 <body <?php body_class(); ?>>
 
 <div class="row" id="wrap">
+	<?php get_sidebar(); 
+	//three columns
+	?>
 	<div class="nine columns" id="main">
 		
-		<header class="twelve columns">
+		<header class="row">
 
-			<hgroup class="site-title three columns">
+			<hgroup class="site-title four columns">
 				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h3 class="subheader"><?php bloginfo('description'); ?></h3>
+				<h3 class="subheader"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'foundation' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 			</hgroup>
 			
-			<div class="nine colums" role="nav">
-			nav
+			<div class="eight colums" role="nav">
+				nav
 			</div>
 		</header>
+			
+		<!-- Main Content -->
+		<div class="row">
+			<div class="nine columns" role="content">
 
+				<?php if ( have_posts() ) : ?>
+
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+					<?php endwhile; ?>
+
+				<?php else : ?>
+
+					<h2><?php _e('No posts.', 'foundation' ); ?></h2>
+					<p class="lead"><?php _e('Sorry about this, I couldn\'t seem to find what you were looking for.', 'foundation' ); ?></p>
+			
+				<?php endif; ?>
+
+				<?php foundation_pagination(); ?>
+
+			</div>
+			<!-- End Main Content -->
+		</div>
+	<!-- End Page -->
+
+	<!-- Footer -->
+		<footer class="row">
+
+			<?php if ( dynamic_sidebar('Sidebar Footer One') && dynamic_sidebar('Sidebar Footer Two') && dynamic_sidebar('Sidebar Footer Three') && dynamic_sidebar('Sidebar Footer Four')  ) : else : ?>
+
+			<div class="twelve columns">
+				<ul class="link-list">
+					<?php wp_list_bookmarks('categorize=0&title_li='); ?>
+				</ul>
+			</div>
+
+			<?php endif; ?>
+
+		</footer>
+	<!-- End Footer -->
+	</div> <!--id="main"-->
+	
+	
+	<?php wp_footer(); ?>
+	
+</div><!-- id="wrap"-->
+
+</body>
+</html>
 
