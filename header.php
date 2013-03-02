@@ -41,14 +41,15 @@
 	<div class="nine columns" id="main">
 		
 		<header class="row">
-
-			<hgroup class="site-title four columns">
-				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h3 class="subheader"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'foundation' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			</hgroup>
+			<div class="twelve columns panel radius" id="header-bg">
+				<hgroup class="site-title four columns">
+					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h3 class="subheader"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'foundation' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+				</hgroup>
 			
-			<div class="eight colums" role="nav">
-				nav
+				<div class="eight colums" role="nav">
+					nav
+				</div>
 			</div>
 		</header>
 			
@@ -78,16 +79,44 @@
 
 	<!-- Footer -->
 		<footer class="row">
-
-			<?php if ( dynamic_sidebar('Sidebar Footer One') && dynamic_sidebar('Sidebar Footer Two') && dynamic_sidebar('Sidebar Footer Three') && dynamic_sidebar('Sidebar Footer Four')  ) : else : ?>
-
-			<div class="twelve columns">
-				<ul class="link-list">
-					<?php wp_list_bookmarks('categorize=0&title_li='); ?>
-				</ul>
+			<div class="twelve columns panel radius" id="footer-bg">
+				
+			
+				<div class="four columns panel callout radius">
+					<a href="https://github.com/Shelob9/Foundation/tree/thesis13" class="fc-webicon git"></a>
+					<br />
+					<p>Fork!</p>
+				</div>
+				
+				<div class="four columns panel callout radius">
+					<h6>Description of site</h6>
+					<h7>Copyright 2013 Josh Pollock. Some rights reserved.</h7>
+					<P>Content licensed under ? Creative Commons License. Site powered by WordPress. WordPress and this theme licensed under GPLv?. Theme based on Foundation Framework, which is licensed under the MIT License, and is based on a starter theme by Drewmoyo.</p>
+				</div>
+			
+				<div class="four columns panel callout radius">
+					<div class="row">
+						<div class="four columns">
+							<a href="#" class="fc-webicon #"></a>
+						</div>
+						
+						<div class="four columns">
+							<a href="#" class="fc-webicon facebook"></a>
+						</div>
+						<div class="four columns">
+							<a href="#" class="fc-webicon googleplus"></a>
+						</div>
+						<div class="four columns">
+							<a href="#" class="fc-webicon email"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="four columns centered">
+							<p>Connect!</p>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<?php endif; ?>
 
 		</footer>
 	<!-- End Footer -->
