@@ -26,10 +26,13 @@ function amzshare_settings_page() {
 	</div>
 <?php
 }
+//Show field only to admins.
+if ( is_super_admin() ) {
 add_action( 'show_user_profile', 'amzshare_profile_fields' );
+}
 add_action( 'edit_user_profile', 'amzshare_profile_fields' );
 function amzshare_profile_fields( $user ) { ?>
-	<h3>Extra Field</h3>
+	<h3>AdShare Code</h3>
 	<table class="form-table">
 		<tr>
 			<th><label for="twitter">Amazon Tracking Code:</label></th>

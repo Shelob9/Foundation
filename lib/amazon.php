@@ -1,9 +1,14 @@
 <?php
 //http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields
-add_action( 'show_user_profile', 'add_amazon_track_code' );
+
+//Show field only to admins.
+if ( is_super_admin() ) {
+	add_action( 'show_user_profile', 'add_amazon_track_code' );
+}
 add_action( 'edit_user_profile', 'add_amazon_track_code' );
 
 function add_amazon_track_code( $user ) { ?>
+
 
 	<h3>Amazon Tracking Code</h3>
 
