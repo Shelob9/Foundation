@@ -27,7 +27,7 @@
 <?php endif; ?>
 
 </footer>
-<!-- End Footer -->
+<!-- End Footerr -->
 <!-- g+ script -->
 <script type="text/javascript">
 (function() {
