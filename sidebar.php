@@ -50,7 +50,7 @@
 
 	<div class="row" id="leftbar" style="margin-top:5px; margin-bottom:5px; margin-left:5px;">
 		<div class="twelve columns centered">
-			<?php // adsense_ad() ?>
+			<?php adsense_ad() ?>
 			
 		</div>
 	</div>
