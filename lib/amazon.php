@@ -44,17 +44,8 @@ function amazon_link_function($atts, $content = null) {
       'isbn' => ' ',
       'title' => ' '
    ), $atts));
-
-$amz = get_the_author_meta( 'amz', FALSE );
- if ($at = null)
- {
-  $amztrack = "natuscho04-20";
- }
-else
- {
-  $amztrack = get_the_author_meta( 'amz', FALSE );
- } 
-
+   
+$amztrack = get_the_author_meta( 'amz', FALSE );
 
   return '<a href="http://www.amazon.com/exec/obidos/ASIN/' .$isbn. '/' .$amztrack. '" title="' .$title. '" target="_blank">' .$title. '</a>';
 }
