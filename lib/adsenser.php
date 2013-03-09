@@ -58,7 +58,7 @@ function adsense_ad() {
 ?>
 <script type="text/javascript">
 	<!--
-	google_ad_client = "ca-pub-6564087273836232";
+	google_ad_client = "ca-pub-656408727383623";
 	google_ad_slot = "<?php echo $input[0]; ?>";
 	google_ad_width = 120;
 	google_ad_height = 600;
